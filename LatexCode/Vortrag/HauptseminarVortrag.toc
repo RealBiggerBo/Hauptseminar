@@ -1,0 +1,17 @@
+\beamer@sectionintoc {1}{Einleitung}{3}{0}{1}
+\beamer@sectionintoc {2}{Das Zwei-Phase-Commit-Protokoll}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Grundlegender Ablauf}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Ablauf mit Fehlern}{5}{0}{2}
+\beamer@sectionintoc {3}{Kleppmann}{5}{0}{3}
+\beamer@subsectionintoc {3}{1}{Modellvorstellung}{5}{0}{3}
+\beamer@subsectionintoc {3}{2}{Invarianten}{5}{0}{3}
+\beamer@subsectionintoc {3}{3}{Beweis einer Invarianten}{5}{0}{3}
+\beamer@subsectionintoc {3}{4}{Beweis der einheitlichen Zustimmung}{5}{0}{3}
+\beamer@sectionintoc {4}{I/O Automaten}{5}{0}{4}
+\beamer@subsectionintoc {4}{1}{Modellvorstellung}{5}{0}{4}
+\beamer@subsectionintoc {4}{2}{Invarianten}{5}{0}{4}
+\beamer@subsectionintoc {4}{3}{Beweis einer Invarianten}{5}{0}{4}
+\beamer@subsectionintoc {4}{4}{Beweis der einheitlichen Zustimmung}{5}{0}{4}
+\beamer@sectionintoc {5}{Vergleich}{5}{0}{5}
+\beamer@subsectionintoc {5}{1}{Kriterien...}{5}{0}{5}
+\beamer@sectionintoc {6}{Fazit}{5}{0}{6}
