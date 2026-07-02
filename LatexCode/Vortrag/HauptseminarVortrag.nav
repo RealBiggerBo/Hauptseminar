@@ -8,42 +8,64 @@
 \headcommand {\beamer@sectionpages {3}{3}}
 \headcommand {\beamer@subsectionpages {3}{3}}
 \headcommand {\sectionentry {2}{Das Zwei-Phase-Commit-Protokoll}{4}{Das Zwei-Phase-Commit-Protokoll}{0}}
-\headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Grundlegender Ablauf}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{5}{Ablauf mit Fehlern}}
-\headcommand {\beamer@sectionpages {4}{4}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\sectionentry {3}{Kleppmann}{5}{Kleppmann}{0}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{5}{Modellvorstellung}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{5}{Invarianten}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{5}{Beweis einer Invarianten}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{5}{Beweis der einheitlichen Zustimmung}}
-\headcommand {\beamer@sectionpages {5}{4}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\sectionentry {4}{I/O Automaten}{5}{I/O Automaten}{0}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{5}{Modellvorstellung}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{5}{Invarianten}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{5}{Beweis einer Invarianten}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{5}{Beweis der einheitlichen Zustimmung}}
-\headcommand {\beamer@sectionpages {5}{4}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\sectionentry {5}{Vergleich}{5}{Vergleich}{0}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{5}{Kriterien...}}
-\headcommand {\beamer@sectionpages {5}{4}}
-\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\sectionentry {6}{Fazit}{5}{Fazit}{0}}
-\headcommand {\beamer@partpages {1}{5}}
-\headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\beamer@sectionpages {5}{5}}
-\headcommand {\beamer@documentpages {5}}
-\headcommand {\gdef \inserttotalframenumber {2}}
+\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Übergänge des Koordinators}}
+\headcommand {\slideentry {2}{1}{1}{4/4}{Übergänge des Koordinators}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {2}{1}{2}{5/5}{Übergänge des Koordinators}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {2}{1}{3}{6/6}{Übergänge des Koordinators}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {2}{1}{4}{7/7}{Übergänge des Koordinators}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{1}{5}{8/8}{Übergänge des Koordinators}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@subsectionpages {4}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{Übergänge eines Teilnehmers}}
+\headcommand {\slideentry {2}{2}{1}{9/9}{Übergänge eines Teilnehmers}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {2}{2}{2}{10/10}{Übergänge eines Teilnehmers}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {2}{2}{3}{11/11}{Übergänge eines Teilnehmers}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {2}{2}{4}{12/12}{Übergänge eines Teilnehmers}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionpages {9}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{13}{Grundlegender Ablauf}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{13}{Ablauf mit Fehlern}}
+\headcommand {\beamer@sectionpages {4}{12}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\sectionentry {3}{Kleppmann}{13}{Kleppmann}{0}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{13}{Modellvorstellung}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{13}{Invarianten}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{13}{Beweis einer Invarianten}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{13}{Beweis der einheitlichen Zustimmung}}
+\headcommand {\beamer@sectionpages {13}{12}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\sectionentry {4}{I/O Automaten}{13}{I/O Automaten}{0}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{13}{Modellvorstellung}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{13}{Invarianten}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{13}{Beweis einer Invarianten}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{13}{Beweis der einheitlichen Zustimmung}}
+\headcommand {\beamer@sectionpages {13}{12}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\sectionentry {5}{Vergleich}{13}{Vergleich}{0}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{13}{Kriterien...}}
+\headcommand {\beamer@sectionpages {13}{12}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\sectionentry {6}{Fazit}{13}{Fazit}{0}}
+\headcommand {\beamer@partpages {1}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@sectionpages {13}{13}}
+\headcommand {\beamer@documentpages {13}}
+\headcommand {\gdef \inserttotalframenumber {11}}

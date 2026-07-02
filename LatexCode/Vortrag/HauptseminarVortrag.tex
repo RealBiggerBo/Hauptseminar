@@ -1,5 +1,8 @@
+\makeatletter
+\def\input@path{{./tuc2019/beamer/}}
+\makeatother
 \documentclass[10pt]{beamer}
-\usetheme{tuc2019}
+\usetheme[fakcolor=if]{tuc2019}
 
 \title{Verifikation verteilter Systeme in Isabelle}
 \subtitle{Ein Vergleich von Kleppmann und I/O-Automaten}
@@ -21,7 +24,53 @@
 	AT\&T
 	\newpage
 	\section{Das Zwei-Phase-Commit-Protokoll}
-	Nutzen
+	\subsection{Übergänge des Koordinators}
+	\begin{frame}
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Bilder/AutomatCoord1}
+	\end{frame}
+
+	\begin{frame}
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Bilder/AutomatCoord2}
+	\end{frame}
+
+	\begin{frame}
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Bilder/AutomatCoord3}
+	\end{frame}
+
+	\begin{frame}
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Bilder/AutomatCoord4}
+	\end{frame}
+
+	\begin{frame}
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Bilder/AutomatCoord5}
+	\end{frame}
+	
+	\subsection{Übergänge eines Teilnehmers}
+	\begin{frame}
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Bilder/AutomatPart1}
+	\end{frame}
+	
+	\begin{frame}
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Bilder/AutomatPart2}
+	\end{frame}
+	
+	\begin{frame}
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Bilder/AutomatPart3}
+	\end{frame}
+	
+	\begin{frame}
+		\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Bilder/AutomatPart4}
+	\end{frame}
+
 	\newpage
 	\subsection{Grundlegender Ablauf}
 	\newpage
