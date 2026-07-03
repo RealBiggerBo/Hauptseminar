@@ -2,18 +2,17 @@
 \beamer@sectionintoc {2}{Das Zwei-Phase-Commit-Protokoll}{4}{0}{2}
 \beamer@subsectionintoc {2}{1}{Übergänge des Koordinators}{4}{0}{2}
 \beamer@subsectionintoc {2}{2}{Übergänge eines Teilnehmers}{9}{0}{2}
-\beamer@subsectionintoc {2}{3}{Grundlegender Ablauf}{13}{0}{2}
-\beamer@subsectionintoc {2}{4}{Ablauf mit Fehlern}{13}{0}{2}
-\beamer@sectionintoc {3}{Kleppmann}{13}{0}{3}
-\beamer@subsectionintoc {3}{1}{Modellvorstellung}{13}{0}{3}
-\beamer@subsectionintoc {3}{2}{Invarianten}{13}{0}{3}
-\beamer@subsectionintoc {3}{3}{Beweis einer Invarianten}{13}{0}{3}
-\beamer@subsectionintoc {3}{4}{Beweis der einheitlichen Zustimmung}{13}{0}{3}
-\beamer@sectionintoc {4}{I/O Automaten}{13}{0}{4}
-\beamer@subsectionintoc {4}{1}{Modellvorstellung}{13}{0}{4}
-\beamer@subsectionintoc {4}{2}{Invarianten}{13}{0}{4}
-\beamer@subsectionintoc {4}{3}{Beweis einer Invarianten}{13}{0}{4}
-\beamer@subsectionintoc {4}{4}{Beweis der einheitlichen Zustimmung}{13}{0}{4}
-\beamer@sectionintoc {5}{Vergleich}{13}{0}{5}
-\beamer@subsectionintoc {5}{1}{Kriterien...}{13}{0}{5}
-\beamer@sectionintoc {6}{Fazit}{13}{0}{6}
+\beamer@subsectionintoc {2}{3}{Beispielhafte Abläufe}{13}{0}{2}
+\beamer@sectionintoc {3}{Kleppmann}{35}{0}{3}
+\beamer@subsectionintoc {3}{1}{Modellvorstellung}{35}{0}{3}
+\beamer@subsectionintoc {3}{2}{Invarianten}{35}{0}{3}
+\beamer@subsectionintoc {3}{3}{Beweis einer Invarianten}{35}{0}{3}
+\beamer@subsectionintoc {3}{4}{Beweis der einheitlichen Zustimmung}{35}{0}{3}
+\beamer@sectionintoc {4}{I/O Automaten}{35}{0}{4}
+\beamer@subsectionintoc {4}{1}{Modellvorstellung}{35}{0}{4}
+\beamer@subsectionintoc {4}{2}{Invarianten}{35}{0}{4}
+\beamer@subsectionintoc {4}{3}{Beweis einer Invarianten}{35}{0}{4}
+\beamer@subsectionintoc {4}{4}{Beweis der einheitlichen Zustimmung}{35}{0}{4}
+\beamer@sectionintoc {5}{Vergleich}{35}{0}{5}
+\beamer@subsectionintoc {5}{1}{Kriterien...}{35}{0}{5}
+\beamer@sectionintoc {6}{Fazit}{35}{0}{6}
