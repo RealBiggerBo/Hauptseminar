@@ -3,16 +3,16 @@
 \beamer@subsectionintoc {2}{1}{Übergänge des Koordinators}{4}{0}{2}
 \beamer@subsectionintoc {2}{2}{Übergänge eines Teilnehmers}{9}{0}{2}
 \beamer@subsectionintoc {2}{3}{Beispielhafte Abläufe}{13}{0}{2}
-\beamer@sectionintoc {3}{Kleppmann}{35}{0}{3}
-\beamer@subsectionintoc {3}{1}{Modellvorstellung}{35}{0}{3}
-\beamer@subsectionintoc {3}{2}{Invarianten}{35}{0}{3}
-\beamer@subsectionintoc {3}{3}{Beweis einer Invarianten}{35}{0}{3}
-\beamer@subsectionintoc {3}{4}{Beweis der einheitlichen Zustimmung}{35}{0}{3}
-\beamer@sectionintoc {4}{I/O Automaten}{35}{0}{4}
-\beamer@subsectionintoc {4}{1}{Modellvorstellung}{35}{0}{4}
-\beamer@subsectionintoc {4}{2}{Invarianten}{35}{0}{4}
-\beamer@subsectionintoc {4}{3}{Beweis einer Invarianten}{35}{0}{4}
-\beamer@subsectionintoc {4}{4}{Beweis der einheitlichen Zustimmung}{35}{0}{4}
-\beamer@sectionintoc {5}{Vergleich}{35}{0}{5}
-\beamer@subsectionintoc {5}{1}{Kriterien...}{35}{0}{5}
-\beamer@sectionintoc {6}{Fazit}{35}{0}{6}
+\beamer@sectionintoc {3}{I/O Automaten}{35}{0}{3}
+\beamer@subsectionintoc {3}{1}{Signatur}{35}{0}{3}
+\beamer@subsectionintoc {3}{2}{Mathematische Definition}{36}{0}{3}
+\beamer@subsectionintoc {3}{3}{Ausführung}{37}{0}{3}
+\beamer@subsectionintoc {3}{4}{Komposition}{38}{0}{3}
+\beamer@sectionintoc {4}{Vergleich}{39}{0}{4}
+\beamer@subsectionintoc {4}{1}{Modellierung}{39}{0}{4}
+\beamer@subsectionintoc {4}{2}{Invarianten}{44}{0}{4}
+\beamer@subsectionintoc {4}{3}{Beweis einer Invarianten}{44}{0}{4}
+\beamer@subsectionintoc {4}{4}{Beweis der einheitlichen Zustimmung}{44}{0}{4}
+\beamer@sectionintoc {5}{Vergleich}{44}{0}{5}
+\beamer@subsectionintoc {5}{1}{Kriterien...}{45}{0}{5}
+\beamer@sectionintoc {6}{Fazit}{45}{0}{6}

@@ -1,0 +1,5 @@
+\thyKleppTupac{7}{12}
+		\noindent\rule{\linewidth}{0.4pt}
+		\only<1>{\thyIoaTupac{17}{23}}
+		\only<2>{\thyIoaTupac{61}{65}}
+		\only<3>{\thyIoaTupac{106}{106}}

@@ -8,13 +8,91 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{stmaryrd}
+\usepackage{minted}
 
+\DeclareUnicodeCharacter{21D2}{$\Rightarrow$}
+\DeclareUnicodeCharacter{2200}{$\forall$}
+\DeclareUnicodeCharacter{2203}{$\exists$}
+\DeclareUnicodeCharacter{2260}{$\neq$}
+\DeclareUnicodeCharacter{2227}{$\land$}
+\DeclareUnicodeCharacter{27F6}{$\longrightarrow$}
+\DeclareUnicodeCharacter{2208}{$\in$}
+\DeclareUnicodeCharacter{27F7}{$\longleftrightarrow$}
+\DeclareUnicodeCharacter{2228}{$\lor$}
+\DeclareUnicodeCharacter{2209}{$\notin$}
+\DeclareUnicodeCharacter{222A}{$\cup$}
+\DeclareUnicodeCharacter{27E6}{$\llbracket$}
+\DeclareUnicodeCharacter{03BB}{$\lambda$}
+\DeclareUnicodeCharacter{27E7}{$\rrbracket$}
+\DeclareUnicodeCharacter{27F9}{$\Longrightarrow$}
+\DeclareUnicodeCharacter{2218}{$\circ$}
+\DeclareUnicodeCharacter{2500}{\texttt{-}}
+\DeclareUnicodeCharacter{2261}{$\equiv$}
+\DeclareUnicodeCharacter{2225}{$\parallel$}
+\DeclareUnicodeCharacter{22C0}{$\bigwedge$}
+
+\newtheorem{sigdefinition}{Definition einer Signatur $S$}
+\newtheorem{iodefinition}{Definition eines I/O Automaten $A$}
+\newtheorem{execdefinition}{Ausführung eines I/O Automaten $A$}
+\newtheorem{pardefinition}{Komposition zweier I/O Automaten $A$ \& $B$}
 
 \newcommand{\CoverFromTop}[2][img]{%
 	\fill[white]
 	($(#1.north west)!#2!(#1.south west)$)
 	rectangle
 	(#1.south east);%
+}
+
+\newcommand{\isabelle}[1]{\mintinline{isabelle}{#1}}
+
+\newcommand{\thy}[3]{
+	\inputminted[
+	fontsize=\small,%<-- what does this affect? what else can I write here?
+	breaklines,
+	linenos,
+	xleftmargin=1em,
+	firstline=#1,
+	lastline=#2
+	]{isabelle}{#3}
+}
+
+\newcommand{\thyKleppNetw}[2]{
+	\thy{#1}{#2}{Hauptseminar/Kleppmann/Network.thy}
+}
+\newcommand{\thyKleppTupac}[2]{
+	\thy{#1}{#2}{Hauptseminar/Kleppmann/Kleppmann_2PC.thy}
+}
+\newcommand{\thyKleppInv}[2]{
+	\thy{#1}{#2}{Hauptseminar/Kleppmann/Kleppmann_inv_def.thy}
+}
+\newcommand{\thyKleppInvOne}[2]{
+	\thy{#1}{#2}{Hauptseminar/Kleppmann/Kleppmann_inv_1.thy}
+}
+\newcommand{\thyKleppAc}[2]{
+	\thy{#1}{#2}{Hauptseminar/Kleppmann/Kleppmann_ac.thy}
+}
+
+\newcommand{\thyIoaAsig}[2]{
+	\thy{#1}{#2}{Hauptseminar/IOA/HOLCF/Asig.thy}
+}
+\newcommand{\thyIoaAutomata}[2]{
+	\thy{#1}{#2}{Hauptseminar/IOA/HOLCF/Automata.thy}
+}
+\newcommand{\thyIoaTupac}[2]{
+	\thy{#1}{#2}{Hauptseminar/IOA/HOLCF/Automata_2PC.thy}
+}
+\newcommand{\thyIoaInv}[2]{
+	\thy{#1}{#2}{Hauptseminar/IOA/HOLCF/Automata_inv_def.thy}
+}
+\newcommand{\thyIoaInvOne}[2]{
+	\thy{#1}{#2}{Hauptseminar/IOA/HOLCF/Automata_inv_1.thy}
+}
+\newcommand{\thyIoaAc}[2]{
+	\thy{#1}{#2}{Hauptseminar/IOA/HOLCF/Automata_ac.thy}
 }
 
 \title{Verifikation verteilter Systeme in Isabelle}
@@ -133,21 +211,97 @@
 	\end{frame}
 	
 	\newpage
-	\section{Kleppmann}
-	\newpage
-	\subsection{Modellvorstellung}
-	\newpage
-	\subsection{Invarianten}
-	\newpage
-	\subsection{Beweis einer Invarianten}
-	\newpage
-	\subsection{Beweis der einheitlichen Zustimmung}
+	\section{I/O Automaten}
+	\subsection{Signatur}
+	\begin{sigdefinition}
+		\begin{itemize}
+			\item Input-Übergänge $in(S)$
+			\item Output-Übergänge $out(S)$
+			\item Internal-Übergänge $int(S)$
+		\end{itemize}
+	\end{sigdefinition}
+	
+	Beispielbild!!!!!
 	
 	\newpage
-	\section{I/O Automaten}
+	\subsection{Mathematische Definition}
+	\begin{iodefinition}
+		\begin{itemize}
+			\item Signatur $sig(A)$	
+			\item Menge an Zuständen $states(A)$
+			\item nichtleere Menge an Startzuständen $start(A) \subseteq states(A)$
+			\item Übergangsrelation
+			\[
+			trans(A) \subseteq states(A) \times acts(sig(A)) \times states(A)
+			\]
+			\item Aufgabenpartition $tasks(A)$
+		\end{itemize}
+	\end{iodefinition}
+	
+	Beispielbild????
+	
 	\newpage
-	\subsection{Modellvorstellung}
+	\subsection{Ausführung}
+	\begin{execdefinition}
+		\begin{itemize}
+			\item Ausführungsfragment $s_0, \pi_1, s_1, \pi_2,...$
+			\item $\forall i \geq 0. (s_i, \pi_{i+1}), s_{i+1}) \in trans(A)$
+			\item Ausführung falls $s_0 \in starts(A)$
+		\end{itemize}
+	\end{execdefinition}
+	
+	Beispielbild????
+	
 	\newpage
+	\subsection{Komposition}
+	\begin{pardefinition}
+		\begin{itemize}
+			\item Automaten müssen kompatibel sein
+			\item Signaturen werden Verknüpft  
+			\item entstehende Zustände sind Vektoren $(s_a, s_b)$ mit $s_i \in start(I)$
+			\item $A$ und $B$ dürfen bei gemeinsamen Übergängen gleichzeitig agieren
+		\end{itemize}
+	\end{pardefinition}
+	
+	OUTPUTS bleiben OUTPUTS für weitere Komposition!
+	
+	\newpage
+	\section{Vergleich}
+	\subsection{Modellierung}
+	%event vs action
+	\begin{frame}[fragile]
+		\thyKleppNetw{10}{14}
+		\noindent\rule{\linewidth}{0.4pt}
+		\thyIoaTupac{8}{13}
+		
+	\end{frame}
+	
+	\newpage
+	%asigs
+	\begin{frame}
+		\thyIoaTupac{50}{54}
+		\thyIoaTupac{89}{93}
+		\thyIoaTupac{113}{117}
+	\end{frame}
+	
+	\newpage
+	%states
+	\begin{frame}[fragile]
+		\thyKleppTupac{7}{12}
+		\noindent\rule{\linewidth}{0.4pt}
+		\only<1>{\thyIoaTupac{17}{23}}
+		\only<2>{\thyIoaTupac{61}{65}}
+		\only<3>{\thyIoaTupac{106}{106}}
+	\end{frame}
+	
+	%step funcs
+	
+	%trans
+	
+	%composition
+	
+	%full ioas
+	
 	\subsection{Invarianten}
 	\newpage
 	\subsection{Beweis einer Invarianten}
@@ -156,6 +310,10 @@
 	
 	\newpage
 	\section{Vergleich}
+	
+	"By itself, the I/O automaton model has very little structure, which allows it to be used for modelling many different types of distributed systems. Additional structure must be added to the basic model to enable it to describe particular types of asynchronous systems."
+	~Lynch buch s.199
+	
 	\newpage
 	\subsection{Kriterien...}
 	
