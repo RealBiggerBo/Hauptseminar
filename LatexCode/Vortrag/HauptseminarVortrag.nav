@@ -48,22 +48,26 @@
 \headcommand {\beamer@framepages {40}{40}}
 \headcommand {\slideentry {4}{1}{3}{41/43}{Modellierung}{0}}
 \headcommand {\beamer@framepages {41}{43}}
-\headcommand {\beamer@subsectionpages {39}{43}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{44}{Invarianten}}
-\headcommand {\beamer@subsectionpages {44}{43}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{44}{Beweis einer Invarianten}}
-\headcommand {\beamer@subsectionpages {44}{43}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{44}{Beweis der einheitlichen Zustimmung}}
-\headcommand {\beamer@sectionpages {39}{43}}
-\headcommand {\beamer@subsectionpages {44}{43}}
-\headcommand {\sectionentry {5}{Vergleich}{44}{Vergleich}{0}}
-\headcommand {\beamer@subsectionpages {44}{44}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{45}{Kriterien...}}
-\headcommand {\beamer@sectionpages {44}{44}}
-\headcommand {\beamer@subsectionpages {45}{44}}
-\headcommand {\sectionentry {6}{Fazit}{45}{Fazit}{0}}
-\headcommand {\beamer@partpages {1}{45}}
-\headcommand {\beamer@subsectionpages {45}{45}}
-\headcommand {\beamer@sectionpages {45}{45}}
-\headcommand {\beamer@documentpages {45}}
-\headcommand {\gdef \inserttotalframenumber {11}}
+\headcommand {\slideentry {4}{1}{4}{44/48}{Modellierung}{0}}
+\headcommand {\beamer@framepages {44}{48}}
+\headcommand {\slideentry {4}{1}{5}{49/52}{Modellierung}{0}}
+\headcommand {\beamer@framepages {49}{52}}
+\headcommand {\beamer@subsectionpages {39}{52}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{53}{Invarianten}}
+\headcommand {\beamer@subsectionpages {53}{52}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{53}{Beweis einer Invarianten}}
+\headcommand {\beamer@subsectionpages {53}{52}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{53}{Beweis der einheitlichen Zustimmung}}
+\headcommand {\beamer@sectionpages {39}{52}}
+\headcommand {\beamer@subsectionpages {53}{52}}
+\headcommand {\sectionentry {5}{Vergleich}{53}{Vergleich}{0}}
+\headcommand {\beamer@subsectionpages {53}{53}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{54}{Kriterien...}}
+\headcommand {\beamer@sectionpages {53}{53}}
+\headcommand {\beamer@subsectionpages {54}{53}}
+\headcommand {\sectionentry {6}{Fazit}{54}{Fazit}{0}}
+\headcommand {\beamer@partpages {1}{54}}
+\headcommand {\beamer@subsectionpages {54}{54}}
+\headcommand {\beamer@sectionpages {54}{54}}
+\headcommand {\beamer@documentpages {54}}
+\headcommand {\gdef \inserttotalframenumber {13}}

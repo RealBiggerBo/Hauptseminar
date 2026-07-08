@@ -1,5 +1,13 @@
-\thyKleppTupac{7}{12}
+\only<4>{\thyKleppTupac{47}{48}}
+		
 		\noindent\rule{\linewidth}{0.4pt}
-		\only<1>{\thyIoaTupac{17}{23}}
-		\only<2>{\thyIoaTupac{61}{65}}
-		\only<3>{\thyIoaTupac{106}{106}}
+		%coord
+		\only<1>{\thyIoaTupac{44}{48}}
+		\only<1>{\thyIoaTupac{56}{57}}
+		
+		\only<2>{\thyIoaTupac{95}{102}}
+		
+		\only<3>{\thyIoaTupac{108}{111}}
+		\only<3>{\thyIoaTupac{119}{120}}
+		
+		\only<4>{\thyIoaTupac{124}{125}}

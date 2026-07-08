@@ -10,9 +10,9 @@
 \beamer@subsectionintoc {3}{4}{Komposition}{38}{0}{3}
 \beamer@sectionintoc {4}{Vergleich}{39}{0}{4}
 \beamer@subsectionintoc {4}{1}{Modellierung}{39}{0}{4}
-\beamer@subsectionintoc {4}{2}{Invarianten}{44}{0}{4}
-\beamer@subsectionintoc {4}{3}{Beweis einer Invarianten}{44}{0}{4}
-\beamer@subsectionintoc {4}{4}{Beweis der einheitlichen Zustimmung}{44}{0}{4}
-\beamer@sectionintoc {5}{Vergleich}{44}{0}{5}
-\beamer@subsectionintoc {5}{1}{Kriterien...}{45}{0}{5}
-\beamer@sectionintoc {6}{Fazit}{45}{0}{6}
+\beamer@subsectionintoc {4}{2}{Invarianten}{53}{0}{4}
+\beamer@subsectionintoc {4}{3}{Beweis einer Invarianten}{53}{0}{4}
+\beamer@subsectionintoc {4}{4}{Beweis der einheitlichen Zustimmung}{53}{0}{4}
+\beamer@sectionintoc {5}{Vergleich}{53}{0}{5}
+\beamer@subsectionintoc {5}{1}{Kriterien...}{54}{0}{5}
+\beamer@sectionintoc {6}{Fazit}{54}{0}{6}
