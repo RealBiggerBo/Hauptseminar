@@ -346,6 +346,43 @@
 	\end{frame}
 	
 	\subsection{Invarianten}
+	\begin{frame}[fragile]
+		\only<1>{Wenn es einen Teilnehmer im Committed-Zustand gibt, so muss es eine Commit-Nachricht geben}
+		\only<2>{Wenn es eine Commit-Nachricht gibt oder der Koordinator im Committed-Zustand ist, so hat jeder Teilnehmer eine Yes-Nachricht gesendet}
+		\only<3>{Wenn der Koordinator im Collecting-Zustand ist, so stimmen hat er sich die korrekten Werte abgespeichert}
+		\only<4>{Wenn der Koordinator im Initial-Zustand ist, so stimmen hat er sich die korrekte Menge an Prozessen abgespeichert}
+		\only<5>{Wenn sich der Koordinator im Initial-, Collecting- oder Committed- Zustand befindet, so wurde keine Abort-Nachricht gesendet}
+		\only<6>{Wenn sich ein Teilnehmer im Aborted-Zustand befindet und keine Abort-Nachricht gesendet wurde, so hat der Teilnehmer auch keine Yes-Nachricht gesendet}
+		\only<7>{Wenn sich der Koordinator im Initial-, Collecting- oder Aborted- Zustand befindet, so wurde keine Commit-Nachricht gesendet}
+		\only<8>{Wenn eine Commit-Nachricht gesendet wurde, so befindet sich der Koordinator entweder im Committed- oder Forgotten-Zustand}
+		\only<9>{Wenn eine Commit-Nachricht gesendet wurde, so wurde keine Abort-Nachricht gesendet}
+		
+		
+		\vspace{0.5em}
+		
+		\only<1>{\thyKleppInv{8}{11}}
+		\only<2>{\thyKleppInv{13}{16}}
+		\only<3>{\thyKleppInv{22}{25}}
+		\only<4>{\thyKleppInv{27}{29}}
+		\only<5>{\thyKleppInv{31}{34}}
+		\only<6>{\thyKleppInv{40}{42}}
+		\only<7>{\thyKleppInv{52}{55}}
+		\only<8>{\thyKleppInv{57}{59}}
+		\only<9>{\thyKleppInv{67}{69}}
+		
+		\noindent\rule{\linewidth}{0.4pt}
+		
+		\only<1>{\thyIoaInv{6}{9}}
+		\only<2>{\thyIoaInv{11}{14}}
+		\only<3>{\thyIoaInv{16}{19}}
+		\only<4>{\thyIoaInv{21}{23}}
+		\only<5>{\thyIoaInv{25}{28}}
+		\only<6>{\thyIoaInv{30}{32}}
+		\only<7>{\thyIoaInv{34}{37}}
+		\only<8>{\thyIoaInv{39}{42}}
+		\only<9>{\thyIoaInv{44}{46}}
+	\end{frame}
+	
 	\newpage
 	\subsection{Beweis einer Invarianten}
 	\newpage
