@@ -4,6 +4,9 @@
 \documentclass[10pt]{beamer}
 \usetheme[fakcolor=if]{tuc2019}
 
+\usepackage[ngerman]{babel}
+\usepackage[backend=biber, sorting=none]{biblatex}
+\addbibresource{vortrag.bib}
 \usepackage{pgffor}
 \usepackage{tikz}
 \usetikzlibrary{calc}
@@ -95,6 +98,17 @@
 	\thy{#1}{#2}{Hauptseminar/IOA/HOLCF/Automata_ac.thy}
 }
 
+\AtBeginSubsection{
+	\ifnum\value{section}=3
+	\begin{frame}[plain]
+		\centering
+		\vspace*{\fill}
+		{\Huge\bfseries\insertsubsectionhead}
+		\vspace*{\fill}
+	\end{frame}
+	\fi
+}
+
 \title{Verifikation verteilter Systeme in Isabelle}
 \subtitle{Ein Vergleich von Kleppmann und I/O-Automaten}
 \author{Sepp Stage}
@@ -103,16 +117,26 @@
 \titlegraphic{\includegraphics[height=0.2\textheight]{tuc2019/logo/tuc_green}}
 
 \begin{document}
+	\begin{frame}
+		\begin{figure}[h]
+			\caption{Auszug aus 'The Michigan Daily' vom 17.1.1990 \cite{at&t_news}}
+			\includegraphics[width=\textwidth, height=0.85\textheight,keepaspectratio]{Bilder/at&t_news}
+			\label{fig:AT&T}
+		\end{figure}
+	\end{frame}
+	
 	\begingroup
 	\tucthreeheadlines
 	\frame{\titlepage}
 	\endgroup
 	
-	\frame{\tableofcontents}
+	%\frame{\tableofcontents}
+	\begin{frame}{Inhaltsverzeichnis}
+		\tableofcontents[hideallsubsections]
+	\end{frame}
 	
 	\newpage
-	\section{Einleitung}
-	AT\&T
+	
 	\newpage
 	\section{Das Zwei-Phase-Commit-Protokoll}
 	\subsection{Übergänge des Koordinators}
@@ -134,10 +158,266 @@
 			}
 		}
 	\end{frame}
-
+	
 	\newpage
-	\subsection{Beispielhafte Abläufe}
-
+	\section{I/O Automaten}
+	\subsection{Signatur}
+	\begin{frame}
+		\begin{sigdefinition}
+			\begin{itemize}
+				\item Input-Übergänge $in(S)$
+				\item Output-Übergänge $out(S)$
+				\item Internal-Übergänge $int(S)$
+			\end{itemize}
+		\end{sigdefinition}
+		
+		\begin{figure}[h]
+			\centering
+			\caption{Simple I/O Automaten}
+			
+			\includegraphics[
+			width=0.49\textwidth,
+			height=0.5\textheight,
+			keepaspectratio
+			]{Bilder/IOA/Coord}
+			\includegraphics[
+			width=0.49\textwidth,
+			height=0.5\textheight,
+			keepaspectratio
+			]{Bilder/IOA/Channel}
+			
+			\label{fig:simpleIoa}
+		\end{figure}
+	\end{frame}
+	
+	\newpage
+	\subsection{Mathematische Definition}
+	\begin{frame}
+		\begin{iodefinition}
+			\begin{itemize}
+				\item Signatur $sig(A)$	
+				\item Menge an Zuständen $states(A)$
+				\item nichtleere Menge an Startzuständen $start(A) \subseteq states(A)$
+				\item Übergangsrelation
+				\[
+				trans(A) \subseteq states(A) \times acts(sig(A)) \times states(A)
+				\]
+				\item Aufgabenpartition $tasks(A)$
+			\end{itemize}
+		\end{iodefinition}
+	\end{frame}
+	
+	\newpage
+	\subsection{Ausführung}
+	\begin{frame}
+		\begin{execdefinition}
+			\begin{itemize}
+				\item Ausführungsfragment $s_0, \pi_1, s_1, \pi_2,...$
+				\item $\forall i \geq 0. (s_i, \pi_{i+1}, s_{i+1}) \in trans(A)$
+				\item Ausführung falls $s_0 \in starts(A)$
+			\end{itemize}
+		\end{execdefinition}
+	\end{frame}	
+	
+	\newpage
+	\subsection{Komposition}
+	\begin{frame}
+		\begin{pardefinition}
+			\begin{itemize}
+				\item Automaten müssen kompatibel sein
+				\item Signaturen werden Verknüpft  
+				\item entstehende Zustände sind Vektoren $(s_a, s_b)$ mit $s_i \in start(I)$
+				\item $A$ und $B$ dürfen bei gemeinsamen Übergängen gleichzeitig agieren
+			\end{itemize}
+		\end{pardefinition}
+		
+		\begin{figure}[h]
+			\centering
+			\caption{Simple Komposition zweier I/O Automaten}
+			
+			\includegraphics[
+			width=\textwidth,
+			height=0.48\textheight,
+			keepaspectratio
+			]{Bilder/IOA/simplePar}
+			
+			\label{fig:simpleIoaPar}
+		\end{figure}
+	\end{frame}
+	
+	\newpage
+	\section{Vergleich}
+	\subsection{Modellierung}	
+	\begin{frame}
+		\begin{columns}[T]
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item Nachrichten
+					\item Events
+					\item Validität von Events
+					\item Zustände
+					\item Übergangsfunktionen
+				\end{itemize}
+			\end{column}
+			
+			\begin{column}{0.5\textwidth}
+				\only<1>{\thyKleppTupac{5}{5}}
+				\only<1>{\thyKleppNetw{10}{14}}
+				\only<2>{\thyKleppTupac{7}{9} ...}
+				\only<3>{\thyKleppTupac{47}{48}}
+				
+			\end{column}
+		\end{columns}
+		
+		\noindent\rule{\linewidth}{0.4pt}
+		\begin{itemize}
+			\item Nachrichten
+			\item Signaturen
+			\item Zustände
+			\item Übergangsrelationen
+			\item Automaten
+			\item Komposition
+		\end{itemize}
+	\end{frame}
+	
+	\newpage
+	\subsection{Flexibilität und Modularität}
+	\begin{frame}
+		\begin{itemize}
+			\item Tendenziell monolithisch
+			\item gleicher Datentyp für Zustände
+			\item strenge Ausführungssemantik
+			\item fest vorgegebenes Netzwerk
+		\end{itemize}
+		\noindent\rule{\linewidth}{0.4pt}
+		\begin{itemize}
+			\item Komposition teil des Frameworks
+			\item eigener Datentyp für Zustände pro IOA
+			\item mehrere IOA können gleichzeitig Übergang verarbeiten
+			\item Netzwerk muss explizit modelliert werden
+		\end{itemize}
+	\end{frame}
+	
+	\newpage
+	\subsection{Beweisstruktur}
+	\begin{frame}[fragile]
+		\begin{itemize}
+			\item Invarianten
+			\only<1>{\thyKleppInv{8}{11}}
+			\only<2->{\item Induktion über Ausführungen (Invarianten)}
+			\only<2>{\thyKleppInvOne{90}{94}}
+			\only<2>{\thyKleppInvOne{102}{102}}
+			\only<3->{\item Direkter Beweis der einheitlichen Zustimmung}
+		\end{itemize}
+		\noindent\rule{\linewidth}{0.4pt}
+		\begin{itemize}
+			\item Invarianten
+			\only<1>{\thyIoaInv{6}{9}}
+			\only<2->{\item Induktion über Ausführungen (Invariante)}
+			\only<2>{\thyIoaInvOne{369}{372}}
+			\only<2>{\thyIoaInvOne{380}{380}}
+			\only<3->{\item Direkter Beweis der einheitlichen Zustimmung}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\centering
+		\begin{figure}[h]
+			\caption{Auszug der schematischen Beweisstruktur für \isabelle{invariant1_trans}}
+			\includegraphics[width=1.0\textwidth]{Bilder/Beweisführung}
+			\label{fig:beweisführung}
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\centering
+		\begin{figure}[h]
+			\caption{Schematische Beweisstruktur für \isabelle{ac1_Theorem}}
+			\includegraphics[width=1.0\textwidth]{Bilder/BeweisAc1}
+			\label{fig:beweisAc1}
+		\end{figure}
+	\end{frame}
+	
+	\newpage
+	\subsection{Beweisaufwand}
+	\begin{frame}[fragile]
+		\begin{itemize}
+			\item starre Struktur
+		\end{itemize}
+		\noindent\rule{\linewidth}{0.4pt}
+		\begin{itemize}
+			\item wenig Struktur
+			\item Netzwerk IOA muss betrachtet werden
+			\item Nicht-Determinismus
+		\end{itemize}
+	\end{frame}
+	
+	\newpage
+	\subsection{Nachweis von Liveness-Eigenschaften}
+	\begin{frame}[fragile]
+		\begin{itemize}
+			\item Netzwerk mit wenig Garantien
+			\item bewusst weggelassen
+			\item 'leicht' erweiterbar
+		\end{itemize}
+		\noindent\rule{\linewidth}{0.4pt}
+		\begin{itemize}
+			\item Liveness nativ vorgesehen
+			\item Netzwerk Garantien können selbst festgelegt werden
+		\end{itemize}
+	\end{frame}
+	
+	\newpage
+	\subsection{Automatisierungsgrad in Isabelle}
+	\begin{frame}[fragile]
+		\begin{itemize}
+			\item wenig Hilfslemmas
+			\item kompaktes Framework
+		\end{itemize}
+		\noindent\rule{\linewidth}{0.4pt}
+		\begin{itemize}
+			\item viele Definitionen
+			\item Aussagen werden größer
+		\end{itemize}
+		\thyIoaInvOne{373}{374}
+	\end{frame}
+	
+	
+	\newpage
+	\subsection{Framework Dokumentation}
+	\begin{frame}[fragile]
+		\begin{itemize}
+			\item 2h Präsentation zu Konsens Algorithmus
+			\item Code online
+			\item Blogbeitrag zu Framework
+		\end{itemize}
+		\noindent\rule{\linewidth}{0.4pt}
+		\begin{itemize}
+			\item mathematisches Modell verbreitet
+			\item Beispiele mit wenig Code
+		\end{itemize}
+	\end{frame}
+	
+	\newpage
+	\section{Fazit}
+	\begin{frame}
+		"By itself, the I/O automaton model has very little structure, which allows it to be used for modelling many different types of distributed systems. Additional structure must be added to the basic model to enable it to describe particular types of asynchronous systems."
+		
+		\textasciitilde{Lynch, Distributed Algorithms S.199 \cite{lynchbook}}
+	\end{frame}
+	
+	\section{Quellen}
+	\nocite{tupacSpec}
+	\nocite{ioaCode}
+	
+	\begin{frame}		
+		\printbibliography
+	\end{frame}
+	
+	\section*{Anhang}
+	\newpage
+	\subsection*{Beispielhafte Abläufe}
+	
 	\begin{frame}[t]
 		\vspace*{0pt}
 		\centering
@@ -168,7 +448,7 @@
 			\only<5>{\CoverFromTop{1}}
 		\end{tikzpicture}
 	\end{frame}
-
+	
 	\begin{frame}[t]
 		\vspace*{0pt}
 		\centering
@@ -210,65 +490,7 @@
 		\end{tikzpicture}
 	\end{frame}
 	
-	\newpage
-	\section{I/O Automaten}
-	\subsection{Signatur}
-	\begin{sigdefinition}
-		\begin{itemize}
-			\item Input-Übergänge $in(S)$
-			\item Output-Übergänge $out(S)$
-			\item Internal-Übergänge $int(S)$
-		\end{itemize}
-	\end{sigdefinition}
-	
-	Beispielbild!!!!!
-	
-	\newpage
-	\subsection{Mathematische Definition}
-	\begin{iodefinition}
-		\begin{itemize}
-			\item Signatur $sig(A)$	
-			\item Menge an Zuständen $states(A)$
-			\item nichtleere Menge an Startzuständen $start(A) \subseteq states(A)$
-			\item Übergangsrelation
-			\[
-			trans(A) \subseteq states(A) \times acts(sig(A)) \times states(A)
-			\]
-			\item Aufgabenpartition $tasks(A)$
-		\end{itemize}
-	\end{iodefinition}
-	
-	Beispielbild????
-	
-	\newpage
-	\subsection{Ausführung}
-	\begin{execdefinition}
-		\begin{itemize}
-			\item Ausführungsfragment $s_0, \pi_1, s_1, \pi_2,...$
-			\item $\forall i \geq 0. (s_i, \pi_{i+1}), s_{i+1}) \in trans(A)$
-			\item Ausführung falls $s_0 \in starts(A)$
-		\end{itemize}
-	\end{execdefinition}
-	
-	Beispielbild????
-	
-	\newpage
-	\subsection{Komposition}
-	\begin{pardefinition}
-		\begin{itemize}
-			\item Automaten müssen kompatibel sein
-			\item Signaturen werden Verknüpft  
-			\item entstehende Zustände sind Vektoren $(s_a, s_b)$ mit $s_i \in start(I)$
-			\item $A$ und $B$ dürfen bei gemeinsamen Übergängen gleichzeitig agieren
-		\end{itemize}
-	\end{pardefinition}
-	
-	OUTPUTS bleiben OUTPUTS für weitere Komposition!
-	
-	\newpage
-	\section{Vergleich}
-	\subsection{Modellierung}
-	
+	\subsection*{Modellierung}
 	%event vs action & msgs
 	\begin{frame}[fragile]
 		\thyKleppTupac{5}{5}
@@ -282,6 +504,7 @@
 	\newpage
 	%asigs
 	\begin{frame}
+		\noindent\rule{\linewidth}{0.4pt}
 		\thyIoaTupac{50}{54}
 		\thyIoaTupac{89}{93}
 		\thyIoaTupac{113}{117}
@@ -439,20 +662,4 @@
 		\only<13>{\thyIoaInvOne{118}{123}}
 		\only<14>{\thyIoaInvOne{125}{131}}
 	\end{frame}
-	
-	\newpage
-	\subsection{Beweis der einheitlichen Zustimmung}
-	
-	\newpage
-	\section{Vergleich}
-	
-	"By itself, the I/O automaton model has very little structure, which allows it to be used for modelling many different types of distributed systems. Additional structure must be added to the basic model to enable it to describe particular types of asynchronous systems."
-	~Lynch buch s.199
-	
-	\newpage
-	\subsection{Kriterien...}
-	
-	\newpage
-	\section{Fazit}
-	blblblb
 \end{document}

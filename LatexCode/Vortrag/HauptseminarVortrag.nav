@@ -2,84 +2,143 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\beamer@sectionpages {1}{2}}
-\headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Einleitung}{3}{Einleitung}{0}}
-\headcommand {\beamer@sectionpages {3}{3}}
-\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\sectionentry {2}{Das Zwei-Phase-Commit-Protokoll}{4}{Das Zwei-Phase-Commit-Protokoll}{0}}
+\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@sectionpages {1}{3}}
+\headcommand {\beamer@subsectionpages {1}{3}}
+\headcommand {\sectionentry {1}{Das Zwei-Phase-Commit-Protokoll}{4}{Das Zwei-Phase-Commit-Protokoll}{0}}
 \headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Übergänge des Koordinators}}
-\headcommand {\slideentry {2}{1}{1}{4/8}{Übergänge des Koordinators}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Übergänge des Koordinators}}
+\headcommand {\slideentry {1}{1}{1}{4/8}{Übergänge des Koordinators}{0}}
 \headcommand {\beamer@framepages {4}{8}}
 \headcommand {\beamer@subsectionpages {4}{8}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{Übergänge eines Teilnehmers}}
-\headcommand {\slideentry {2}{2}{1}{9/12}{Übergänge eines Teilnehmers}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{Übergänge eines Teilnehmers}}
+\headcommand {\slideentry {1}{2}{1}{9/12}{Übergänge eines Teilnehmers}{0}}
 \headcommand {\beamer@framepages {9}{12}}
+\headcommand {\beamer@sectionpages {4}{12}}
 \headcommand {\beamer@subsectionpages {9}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{13}{Beispielhafte Abläufe}}
-\headcommand {\slideentry {2}{3}{1}{13/16}{Beispielhafte Abläufe}{0}}
-\headcommand {\beamer@framepages {13}{16}}
-\headcommand {\slideentry {2}{3}{2}{17/21}{Beispielhafte Abläufe}{0}}
-\headcommand {\beamer@framepages {17}{21}}
-\headcommand {\slideentry {2}{3}{3}{22/27}{Beispielhafte Abläufe}{0}}
-\headcommand {\beamer@framepages {22}{27}}
-\headcommand {\slideentry {2}{3}{4}{28/34}{Beispielhafte Abläufe}{0}}
-\headcommand {\beamer@framepages {28}{34}}
-\headcommand {\beamer@sectionpages {4}{34}}
-\headcommand {\beamer@subsectionpages {13}{34}}
-\headcommand {\sectionentry {3}{I/O Automaten}{35}{I/O Automaten}{0}}
-\headcommand {\beamer@subsectionpages {35}{34}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{35}{Signatur}}
-\headcommand {\beamer@subsectionpages {35}{35}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{36}{Mathematische Definition}}
-\headcommand {\beamer@subsectionpages {36}{36}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{37}{Ausführung}}
+\headcommand {\sectionentry {2}{I/O Automaten}{13}{I/O Automaten}{0}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{13}{Signatur}}
+\headcommand {\slideentry {2}{1}{1}{13/13}{Signatur}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{14}{Mathematische Definition}}
+\headcommand {\slideentry {2}{2}{1}{14/14}{Mathematische Definition}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{15}{Ausführung}}
+\headcommand {\slideentry {2}{3}{1}{15/15}{Ausführung}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{16}{Komposition}}
+\headcommand {\slideentry {2}{4}{1}{16/16}{Komposition}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@sectionpages {13}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\sectionentry {3}{Vergleich}{17}{Vergleich}{0}}
+\headcommand {\beamer@subsectionpages {17}{16}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{17}{Modellierung}}
+\headcommand {\slideentry {3}{1}{1}{17/17}{Modellierung}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {3}{1}{2}{18/20}{Modellierung}{0}}
+\headcommand {\beamer@framepages {18}{20}}
+\headcommand {\beamer@subsectionpages {17}{20}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{21}{Flexibilität und Modularität}}
+\headcommand {\slideentry {3}{2}{1}{21/21}{Flexibilität und Modularität}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {3}{2}{2}{22/22}{Flexibilität und Modularität}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@subsectionpages {21}{22}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{23}{Beweisstruktur}}
+\headcommand {\slideentry {3}{3}{1}{23/23}{Beweisstruktur}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{3}{2}{24/26}{Beweisstruktur}{0}}
+\headcommand {\beamer@framepages {24}{26}}
+\headcommand {\slideentry {3}{3}{3}{27/27}{Beweisstruktur}{0}}
+\headcommand {\beamer@framepages {27}{27}}
+\headcommand {\slideentry {3}{3}{4}{28/28}{Beweisstruktur}{0}}
+\headcommand {\beamer@framepages {28}{28}}
+\headcommand {\beamer@subsectionpages {23}{28}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{29}{Beweisaufwand}}
+\headcommand {\slideentry {3}{4}{1}{29/29}{Beweisaufwand}{0}}
+\headcommand {\beamer@framepages {29}{29}}
+\headcommand {\slideentry {3}{4}{2}{30/30}{Beweisaufwand}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@subsectionpages {29}{30}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{31}{Nachweis von Liveness-Eigenschaften}}
+\headcommand {\slideentry {3}{5}{1}{31/31}{Nachweis von Liveness-Eigenschaften}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {3}{5}{2}{32/32}{Nachweis von Liveness-Eigenschaften}{0}}
+\headcommand {\beamer@framepages {32}{32}}
+\headcommand {\beamer@subsectionpages {31}{32}}
+\headcommand {\beamer@subsectionentry {0}{3}{6}{33}{Automatisierungsgrad in Isabelle}}
+\headcommand {\slideentry {3}{6}{1}{33/33}{Automatisierungsgrad in Isabelle}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {3}{6}{2}{34/34}{Automatisierungsgrad in Isabelle}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\beamer@subsectionpages {33}{34}}
+\headcommand {\beamer@subsectionentry {0}{3}{7}{35}{Framework Dokumentation}}
+\headcommand {\slideentry {3}{7}{1}{35/35}{Framework Dokumentation}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {3}{7}{2}{36/36}{Framework Dokumentation}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\beamer@sectionpages {17}{36}}
+\headcommand {\beamer@subsectionpages {35}{36}}
+\headcommand {\sectionentry {4}{Fazit}{37}{Fazit}{0}}
+\headcommand {\slideentry {4}{0}{1}{37/37}{}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\beamer@sectionpages {37}{37}}
 \headcommand {\beamer@subsectionpages {37}{37}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{38}{Komposition}}
-\headcommand {\beamer@sectionpages {35}{38}}
+\headcommand {\sectionentry {5}{Quellen}{38}{Quellen}{0}}
+\headcommand {\beamer@sectionpages {38}{37}}
+\headcommand {\beamer@subsectionpages {38}{37}}
+\headcommand {\sectionentry {6}{Literatur}{38}{Literatur}{0}}
+\headcommand {\slideentry {6}{0}{0}{38/38}{}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\beamer@sectionpages {38}{38}}
 \headcommand {\beamer@subsectionpages {38}{38}}
-\headcommand {\sectionentry {4}{Vergleich}{39}{Vergleich}{0}}
+\headcommand {\sectionentry {7}{Anhang}{39}{Anhang}{0}}
 \headcommand {\beamer@subsectionpages {39}{38}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{39}{Modellierung}}
-\headcommand {\slideentry {4}{1}{1}{39/39}{Modellierung}{0}}
-\headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {4}{1}{2}{40/40}{Modellierung}{0}}
-\headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {4}{1}{3}{41/43}{Modellierung}{0}}
-\headcommand {\beamer@framepages {41}{43}}
-\headcommand {\slideentry {4}{1}{4}{44/48}{Modellierung}{0}}
-\headcommand {\beamer@framepages {44}{48}}
-\headcommand {\slideentry {4}{1}{5}{49/53}{Modellierung}{0}}
-\headcommand {\beamer@framepages {49}{53}}
-\headcommand {\beamer@subsectionpages {39}{53}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{54}{Invarianten}}
-\headcommand {\slideentry {4}{2}{1}{54/62}{Invarianten}{0}}
-\headcommand {\beamer@framepages {54}{62}}
-\headcommand {\beamer@subsectionpages {54}{62}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{63}{Ausführungssemantik}}
-\headcommand {\slideentry {4}{3}{1}{63/64}{Ausführungssemantik}{0}}
-\headcommand {\beamer@framepages {63}{64}}
-\headcommand {\beamer@subsectionpages {63}{64}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{65}{Beweis einer Invarianten}}
-\headcommand {\slideentry {4}{4}{1}{65/70}{Beweis einer Invarianten}{0}}
-\headcommand {\beamer@framepages {65}{70}}
-\headcommand {\beamer@subsectionpages {65}{70}}
-\headcommand {\beamer@subsectionentry {0}{4}{5}{71}{Hilfslemmas}}
-\headcommand {\slideentry {4}{5}{1}{71/84}{Hilfslemmas}{0}}
-\headcommand {\beamer@framepages {71}{84}}
-\headcommand {\beamer@subsectionpages {71}{84}}
-\headcommand {\beamer@subsectionentry {0}{4}{6}{85}{Beweis der einheitlichen Zustimmung}}
-\headcommand {\beamer@sectionpages {39}{84}}
-\headcommand {\beamer@subsectionpages {85}{84}}
-\headcommand {\sectionentry {5}{Vergleich}{85}{Vergleich}{0}}
-\headcommand {\beamer@subsectionpages {85}{85}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{86}{Kriterien...}}
-\headcommand {\beamer@sectionpages {85}{85}}
-\headcommand {\beamer@subsectionpages {86}{85}}
-\headcommand {\sectionentry {6}{Fazit}{86}{Fazit}{0}}
-\headcommand {\beamer@partpages {1}{86}}
-\headcommand {\beamer@subsectionpages {86}{86}}
-\headcommand {\beamer@sectionpages {86}{86}}
-\headcommand {\beamer@documentpages {86}}
-\headcommand {\gdef \inserttotalframenumber {17}}
+\headcommand {\beamer@subsectionentry {0}{7}{1}{39}{Beispielhafte Abläufe}}
+\headcommand {\slideentry {7}{1}{1}{39/42}{Beispielhafte Abläufe}{0}}
+\headcommand {\beamer@framepages {39}{42}}
+\headcommand {\slideentry {7}{1}{2}{43/47}{Beispielhafte Abläufe}{0}}
+\headcommand {\beamer@framepages {43}{47}}
+\headcommand {\slideentry {7}{1}{3}{48/53}{Beispielhafte Abläufe}{0}}
+\headcommand {\beamer@framepages {48}{53}}
+\headcommand {\slideentry {7}{1}{4}{54/60}{Beispielhafte Abläufe}{0}}
+\headcommand {\beamer@framepages {54}{60}}
+\headcommand {\beamer@subsectionpages {39}{60}}
+\headcommand {\beamer@subsectionentry {0}{7}{2}{61}{Modellierung}}
+\headcommand {\slideentry {7}{2}{1}{61/61}{Modellierung}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\slideentry {7}{2}{2}{62/62}{Modellierung}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\slideentry {7}{2}{3}{63/65}{Modellierung}{0}}
+\headcommand {\beamer@framepages {63}{65}}
+\headcommand {\slideentry {7}{2}{4}{66/70}{Modellierung}{0}}
+\headcommand {\beamer@framepages {66}{70}}
+\headcommand {\slideentry {7}{2}{5}{71/75}{Modellierung}{0}}
+\headcommand {\beamer@framepages {71}{75}}
+\headcommand {\beamer@subsectionpages {61}{75}}
+\headcommand {\beamer@subsectionentry {0}{7}{3}{76}{Invarianten}}
+\headcommand {\slideentry {7}{3}{1}{76/84}{Invarianten}{0}}
+\headcommand {\beamer@framepages {76}{84}}
+\headcommand {\beamer@subsectionpages {76}{84}}
+\headcommand {\beamer@subsectionentry {0}{7}{4}{85}{Ausführungssemantik}}
+\headcommand {\slideentry {7}{4}{1}{85/86}{Ausführungssemantik}{0}}
+\headcommand {\beamer@framepages {85}{86}}
+\headcommand {\beamer@subsectionpages {85}{86}}
+\headcommand {\beamer@subsectionentry {0}{7}{5}{87}{Beweis einer Invarianten}}
+\headcommand {\slideentry {7}{5}{1}{87/92}{Beweis einer Invarianten}{0}}
+\headcommand {\beamer@framepages {87}{92}}
+\headcommand {\beamer@subsectionpages {87}{92}}
+\headcommand {\beamer@subsectionentry {0}{7}{6}{93}{Hilfslemmas}}
+\headcommand {\slideentry {7}{6}{1}{93/106}{Hilfslemmas}{0}}
+\headcommand {\beamer@framepages {93}{106}}
+\headcommand {\beamer@partpages {1}{106}}
+\headcommand {\beamer@subsectionpages {93}{106}}
+\headcommand {\beamer@sectionpages {39}{106}}
+\headcommand {\beamer@documentpages {106}}
+\headcommand {\gdef \inserttotalframenumber {40}}
